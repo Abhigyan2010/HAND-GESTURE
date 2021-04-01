@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Hand Gesture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <center>
+      <div class="col-xs-12 header_div">
+      <h2 class="text-capitalize">hand gesture identification!</h2>
+      <span id="emoji_title">&#128076;&nbsp;&nbsp;&#129304;&nbsp;&nbsp;&#128077;</span>
+      </div>
+    <div class="col-sm-6 col-xs-12">
+      <label>Webcam View-</label>
+      <div id="camera"></div>
+      <button class="btn btn-info" onclick="take_snapshot()">Take Picture</button>
+    </div>
+    <div class="col-sm-6 col-xs-12">
+      <label>Taken Picture</label>
+      <div id="snapshot"></div>
+      <button class="btn btn-success" onclick="Identify_image()">Identify Picture</button>
+    </div>
+    <span id="result"></span>
+    <span id="result_name"></span>
+    </center>
+    <script src="main.js"></script>
+  </body>
+</html>
